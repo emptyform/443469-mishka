@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Tanya Labetskaya](https://up.htmlacademy.ru/adaptive/11/user/443469).
-* Наставник: `Неизвестно`.
+* Наставник: Максим Протасов (https://htmlacademy.ru/profile/id209392).
 
 ---
 
