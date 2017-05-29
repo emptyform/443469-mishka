@@ -6,41 +6,43 @@
 </head>
 <body>
 <header class="page-header">
-  <h1 class="page-header__title">Мишка - Милые штуки ручной работы для дома</h1> <!--hidden-->
+  <h1 class="page-header__title">Мишка - Милые штуки ручной работы для дома</h1>
   <a class="page-header__logo"></a>
-  <nav class="main-nav"> <!--main-nav--open-->
-    <div class="main-nav__toggler">
-      <span></span>
-    </div>
+
+  <nav class="main-nav">
+    <div class="main-nav__toggler"></div>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="">Каталог товаров</a>
+          <a href="#">Каталог товаров</a>
         </li>
         <li class="main-nav__item">
-          <a href="">Вязание на заказ</a>
+          <a href="#">Вязание на заказ</a>
         </li>
         <li class="main-nav__item main-nav__item--search-panel">
-          <a href="">Поиск по сайту</a>
+          <a href="#">Поиск по сайту</a>
         </li>
-        <li class="main-nav__item main-nav__iten--cart">
-          <a href="">Корзина:пока пуста</a>
+        <li class="main-nav__item main-nav__item--cart">
+          <a href="#">Корзина:пока пуста</a>
         </li>
       </ul>
       <div class="main-nav__sub-items"></div>
-      <!--hidden for mobile-->
     </div>
   </nav>
 </header>
+
 <main>
   <section class="top-promo">
     <h1 class="top-promo__title">Милые штуки ручной работы для дома</h1>
+
     <div class="top-promo__item">Предметы интерьера</div>
     <div class="top-promo__item top-promo__item--dark">Детские игрушки</div>
   </section>
+
   <section class="promo">
     <div class="promo__descr">
       <h2 class="promo__descr-title">Вязаные корзинки</h2>
+
       <div class="promo__descr-mark">ТОВАР НЕДЕЛИ</div>
       <p class="promo__descr-text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
         размерах.</p>
@@ -61,14 +63,14 @@
     </div>
     <div class="promo__order-block">
       <div class="promo__order-price">Цена: 990 руб.</div>
-      <div class="promo__order btn">ЗАКАЗАТЬ</div>
+      <button class="promo__order btn" type="button">ЗАКАЗАТЬ</button>
     </div>
     <div class="promo__image"></div>
   </section>
+
   <section class="about">
-    <h2 class="about__title">
-      Коротко о нас:
-    </h2>
+    <h2 class="about__title">Коротко о нас:</h2>
+
     <div class="about__wrapper">
       <div class="about__item about__item--ecology">Экологически чистые материалы</div>
       <div class="about__item about__item--price">Скандинавский стиль по российской цене</div>
@@ -78,27 +80,28 @@
       <div class="about__item about__item--gift">Поставляется в подарочной упаковке</div>
     </div>
   </section>
+
   <section class="reviews slider">
-    <h2 class="reviews__title">
-      Отзывы
-    </h2>
+    <h2 class="reviews__title">Отзывы</h2>
+
     <div class="reviews__wrapper slider-wrapper">
       <blockquote class="reviews__item slider__item">
-        <p class="revies__item-descr">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+        <p class="reviews__item-descr">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
           лайков, как у популярных инстамамочекю В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии
           стразу стали более стильными, а также набирают больше лайков!</p>
-        <cite class="revies__item-name">Анастасия Красильникова</cite>
-        <div class="revies__item-mail">@misssssiskras</div>
+        <cite class="reviews__item-name">Анастасия Красильникова</cite>
+        <a class="reviews__item-mail" href="#">@misssssiskras</a>
       </blockquote>
     </div>
+
     <button class="reviews__prev" type="button">Предыдущий отзыв</button>
     <button class="reviews__next" type="button">Следующий отзыв</button>
-    <a class="reviews__write btn" href="">НАПИСАТЬ</a>
+    <button class="reviews__write btn" type="button">НАПИСАТЬ</button>
   </section>
+
   <section class="contacts">
-    <h2 class="about__title">
-      Контакты:
-    </h2>
+    <h2 class="about__title">Контакты:</h2>
+
     <div class="contacts__info">
       <div class="contacts__info-item">
         <span class="contacts__item-key">e-mail:</span>
@@ -109,37 +112,53 @@
         <span class="contacts__item-val">г. Санкт-Петербург, ул. Большая Конюшен</span>
       </div>
     </div>
+
     <div class="contacts__map"></div>
-    <a class="reviews__write btn" href="">НАПИШИТЕ НАМ</a>
+    <button class="reviews__write btn" type="button">НАПИШИТЕ НАМ</button>
   </section>
 </main>
+
 <footer class="page-footer">
   <section class="page-footer__inner">
-    <div class="page-footer__logo"> <!--hidden on mobile-->
+    <div class="page-footer__logo">
       <img src="http://placehold.it/150x100" alt="Мишка"/>
     </div>
     <div class="social-links">
-      <a href="" class="social-link social-link--vk">Мы в контакте</a>
-      <a href="" class="social-link social-link--fb">Мы в фейсбуке</a>
-      <a href="" class="social-link social-link--tw">Мы в твиттере</a>
+      <a href="#" class="social-link social-link--vk">Мы в контакте</a>
+      <a href="#" class="social-link social-link--fb">Мы в фейсбуке</a>
+      <a href="#" class="social-link social-link--tw">Мы в твиттере</a>
     </div>
     <div class="page-footer__copyright">
-      Разработано
+      <span class="page-footer__copyright-text">Разработано</span>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">HTML Academy</a>
     </div>
   </section>
 </footer>
+
 <section class="popup">
   <div class="popup__inner">
     <div class="popup__title">Добавить в корзину</div>
-    <p>Выберите размер:</p>
-    <div class="popup__sizes">
-      <div class="popup__sizes-item popup__sizes-item--active">S</div>
-      <div class="popup__sizes-item">M</div>
-      <div class="popup__sizes-item">L</div>
-    </div>
-    <div class="popup__button btn">Добавить</div>
+    <p class="popup__text">Выберите размер:</p>
+
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <div class="popup__sizes">
+        <div class="popup__sizes-item  popup__sizes-item--checked">
+          <input type="radio" id="sizes-s" name="type"/>
+          <label for="sizes-s" class="popup__sizes-text popup__sizes-text--active">S</label>
+        </div>
+        <div class="popup__sizes-item">
+          <input type="radio" id="sizes-m" name="type"/>
+          <label for="sizes-m" class="popup__sizes-text">M</label>
+        </div>
+        <div class="popup__sizes-item">
+          <input type="radio" id="sizes-l" name="type"/>
+          <label for="sizes-l" class="popup__sizes-text">L</label>
+        </div>
+      </div>
+      <button class="popup__button btn" type="submit">Добавить</button>
+    </form>
   </div>
 </section>
+
 </body>
 </html>
