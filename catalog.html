@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body>
+
+<header class="page-header">
+  <h1 class="page-header__title">Мишка - Милые штуки ручной работы для дома</h1>
+  <a class="page-header__logo" href="index.html"></a>
+
+  <nav class="main-nav">
+    <div class="main-nav__toggler"></div>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Вязание на заказ</a>
+        </li>
+        <li class="main-nav__item main-nav__item--search-panel">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item main-nav__item--cart">
+          <a href="#">Корзина:пока пуста</a>
+        </li>
+      </ul>
+      <div class="main-nav__sub-items"></div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="top-promo top-promo--grey-bg">
+    <h1 class="top-promo__title">Каталог товаров</h1>
+  </div>
+
+  <section class="catalog">
+    <article class="catalog-item">
+      <div class="catalog-item__img">
+        <img src="http://placehold.it/150x100" alt=""/>
+      </div>
+      <span class="catalog-item__title">Зайчик-попрыгайчик</span>
+      <span class="catalog-item__descr">Рост 30 см, вес 200 г</span>
+
+      <div class="catalog-item__bottom">
+        <span class="catalog-item__price">1 200 руб.</span>
+        <span class="catalog-item__cart">В корзину</span>
+      </div>
+    </article>
+
+    <article class="catalog-item">
+      <div class="catalog-item__img">
+        <img src="http://placehold.it/150x100" alt=""/>
+      </div>
+      <span class="catalog-item__title">Корзинка для белья</span>
+      <span class="catalog-item__descr">Диаметр 15 см, высота 10 см</span>
+
+      <div class="catalog-item__bottom">
+        <span class="catalog-item__price">690 руб..</span>
+        <span class="catalog-item__cart">В корзину</span>
+      </div>
+    </article>
+
+    <article class="catalog-item">
+      <div class="catalog-item__img">
+        <img src="http://placehold.it/150x100" alt=""/>
+      </div>
+      <span class="catalog-item__title">Большая корзинка для игрушек</span>
+      <span class="catalog-item__descr">Диаметр 30 см, высота 30 см</span>
+
+      <div class="catalog-item__bottom">
+        <span class="catalog-item__price">1 500 руб.</span>
+        <span class="catalog-item__cart">В корзину</span>
+      </div>
+    </article>
+  </section>
+
+  <section class="process">
+    <h2 class="process__title">Процесс производства</h2>
+    <div class="process__video"></div>
+    <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются
+      наши товары.</p>
+    <button class="process__button btn" type="button">Сделать заказ</button>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <section class="page-footer__inner">
+    <div class="page-footer__logo">
+      <img src="http://placehold.it/150x100" alt="Мишка"/>
+    </div>
+    <div class="social-links">
+      <a href="#" class="social-link social-link--vk">Мы в контакте</a>
+      <a href="#" class="social-link social-link--fb">Мы в фейсбуке</a>
+      <a href="#" class="social-link social-link--tw">Мы в твиттере</a>
+    </div>
+    <div class="page-footer__copyright">
+      <span class="page-footer__copyright-text">Разработано</span>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">HTML Academy</a>
+    </div>
+  </section>
+</footer>
+
+<section class="popup">
+  <div class="popup__inner">
+    <div class="popup__title">Добавить в корзину</div>
+    <p class="popup__text">Выберите размер:</p>
+
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <div class="popup__sizes">
+        <div class="popup__sizes-item  popup__sizes-item--checked">
+          <input type="radio" id="sizes-s" name="type"/>
+          <label for="sizes-s" class="popup__sizes-text popup__sizes-text--active">S</label>
+        </div>
+        <div class="popup__sizes-item">
+          <input type="radio" id="sizes-m" name="type"/>
+          <label for="sizes-m" class="popup__sizes-text">M</label>
+        </div>
+        <div class="popup__sizes-item">
+          <input type="radio" id="sizes-l" name="type"/>
+          <label for="sizes-l" class="popup__sizes-text">L</label>
+        </div>
+      </div>
+      <button class="popup__button btn" type="submit">Добавить</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
