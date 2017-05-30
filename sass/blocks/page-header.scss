@@ -2,8 +2,8 @@
 /// <reference path="mixins.scss" />
 
 .page-header {
-  @include centralize();
-  @include clearfix();
+  //@include centralize;
+  @include clearfix;
   background-color: #fff;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
@@ -16,7 +16,7 @@
 }
 
 .page-header__title {
-  @include hide-text();
+  @include hide-text;
 }
 
 .page-header__logo {
@@ -25,8 +25,7 @@
   height: 35px;
   @include inblock();
   margin-top: 22px;
-  color:$clr-def;
-
+  color: $clr-def;
 }
 
 
