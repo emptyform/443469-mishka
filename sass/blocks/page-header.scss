@@ -1,0 +1,33 @@
+/// <reference path="variables.scss" />
+/// <reference path="mixins.scss" />
+
+.page-header {
+  @include centralize();
+  @include clearfix();
+  background-color: #fff;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  height: 78px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.page-header__title {
+  @include hide-text();
+}
+
+.page-header__logo {
+  background: url('../img/logo-mobile.svg') 0 0 no-repeat;
+  width: 86px;
+  height: 35px;
+  @include inblock();
+  margin-top: 22px;
+  color:$clr-def;
+
+}
+
+
+

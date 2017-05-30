@@ -1,0 +1,19 @@
+html {
+  overflow-y: scroll;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size:15px;
+  line-height: 2;
+  color:$clr-def;
+  font-family: $global-font;
+
+}
+main {
+  padding-top: 80px;
+}
