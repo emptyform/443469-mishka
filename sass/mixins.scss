@@ -29,7 +29,7 @@
   min-width: 320px;
   max-width: 320px;
   @include box-sizing();
-  padding: 0 $content-space;
+
 }
 
 @mixin hide-text() {
@@ -40,4 +40,16 @@
 
 @mixin bg($left: 0, $top: 0, $file: 'sprite.png', $repeat: no-repeat, $bg-color:transparent) {
   background: url('../img/#{$file}') $repeat scroll $left $top $bg-color;
+}
+@mixin full-width(){
+  width: 100%;
+}
+
+@mixin link-block() {
+  text-decoration: none;
+  display: block;
+
+  &:hover{
+    text-decoration: none;
+  }
 }

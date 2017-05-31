@@ -1,0 +1,56 @@
+.page-footer {
+  background-color: #f1f1f1;
+}
+
+.page-footer__inner{
+padding: 0 $content-space;
+}
+
+.page-footer__logo{
+display: none;
+}
+
+.social-links {
+
+}
+
+
+.page-footer__copyright{
+
+}
+
+.page-footer__copyright-text{
+
+}
+
+.page-footer__copyright-link{
+
+}
+.page-footer__copyright-img {
+  width: 27px;
+  height: 34px;
+  fill:$color-main;
+}
+.social-link-wrap {
+  text-decoration: none;
+  span {
+    @include hide-text;
+  }
+}
+
+.social-link {
+
+  fill:#231F20;
+
+  &--insta {
+
+  }
+
+  &--fb {
+
+  }
+
+  &--tw {
+
+  }
+}

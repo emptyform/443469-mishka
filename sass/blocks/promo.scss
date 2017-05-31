@@ -1,0 +1,60 @@
+.promo {
+  @include centralize;
+  padding: 0 $content-space;
+}
+
+.promo__descr-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.promo__descr-mark {
+  font-size: 1.7em;
+  color: #63d1bb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo__descr-text {
+  font-size: 1.5em;
+  line-height: 1.6;
+}
+
+.promo__info {
+  font-size: 1.5em;
+  line-height: 1.33333;
+}
+
+.promo__info-item {
+  border-bottom: 1px solid #ececec;
+  padding: 10px 0;
+  @include clearfix;
+}
+
+.promo__item-key {
+  float: left;
+  min-width: 98px;
+}
+
+.promo__item-val {
+  float: left;
+}
+
+.promo__image {
+  @include bg(50%, 50%, 'triple-set-mobile@1x.jpg', no-repeat);
+  background-size: cover;
+  height: 316px;
+}
+
+.promo__order-price {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: $clr-def;
+  text-align: center;
+}
+
+.promo__order {
+  width: 100%;
+
+}

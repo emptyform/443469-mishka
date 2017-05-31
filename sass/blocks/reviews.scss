@@ -1,0 +1,69 @@
+.reviews {
+  @include centralize;
+  padding: 0 $content-space;
+}
+
+.reviews__title {
+  font-size: 2.5em;
+  line-height: 1.2;
+  color: $clr-title;
+  font-weight: 700;
+}
+
+.reviews__wrapper {
+
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__item-descr {
+  font-size: 1.5em;
+  line-height: 2;
+}
+
+.reviews__item-name {
+  font-size: 1.7em;
+  font-weight: 700;
+  font-style: normal;
+  color: $clr-title;
+}
+
+.reviews__item-mail {
+  font-size: 1.7em;
+  color: $clr-def;
+  @include link-block;
+}
+
+.reviews__button-wrap {
+  @include hide-text;
+}
+
+.reviews__button {
+  background: none;
+  width: 50%;
+  @include box-sizing;
+  padding: 10px;
+  border: 1px solid #ececec;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+
+  + .reviews__button {
+    margin-left: -1px;
+  }
+}
+
+.reviews__prev {
+
+}
+
+.reviews__next {
+
+}
+
+.reviews__write {
+  width: 100%;
+  margin-top: 38px;
+}
