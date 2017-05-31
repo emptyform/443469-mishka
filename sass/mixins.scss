@@ -41,9 +41,6 @@
 @mixin bg($left: 0, $top: 0, $file: 'sprite.png', $repeat: no-repeat, $bg-color:transparent) {
   background: url('../img/#{$file}') $repeat scroll $left $top $bg-color;
 }
-@mixin full-width(){
-  width: 100%;
-}
 
 @mixin link-block() {
   text-decoration: none;

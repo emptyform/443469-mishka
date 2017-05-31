@@ -11,19 +11,25 @@
 
 .promo__descr-mark {
   font-size: 1.7em;
+  line-height: 1;
   color: #63d1bb;
   font-weight: 700;
   text-transform: uppercase;
+
+
 }
 
 .promo__descr-text {
   font-size: 1.5em;
   line-height: 1.6;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 .promo__info {
   font-size: 1.5em;
   line-height: 1.33333;
+  margin-bottom: 25px;
 }
 
 .promo__info-item {
@@ -40,7 +46,9 @@
 .promo__item-val {
   float: left;
 }
-
+.promo__order-block {
+  margin-bottom: 30px;
+}
 .promo__image {
   @include bg(50%, 50%, 'triple-set-mobile@1x.jpg', no-repeat);
   background-size: cover;
@@ -52,6 +60,7 @@
   font-weight: 700;
   color: $clr-def;
   text-align: center;
+  margin: 25px 0;
 }
 
 .promo__order {

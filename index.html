@@ -204,20 +204,19 @@
   </section>
 
   <section class="contacts">
-    <h2 class="about__title">Контакты:</h2>
+    <h2 class="contacts__title">Контакты:</h2>
 
-    <table class="contacts__info">
-      <tr class="contacts__info-item">
-        <td class="contacts__item-key">e-mail:</td>
-        <td><a class="contacts__item-val contacts__item-val--mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </td>
-      </tr>
-      <tr class="contacts__info-item">
-        <td class="contacts__item-key">адрес:</td>
-        <td><span
-          class="contacts__item-val">г. Санкт-Петербург,<br/> ул. Большая Конюшенная,<br/> д.19/8, офис 101</span></td>
-      </tr>
-    </table>
+    <div class="contacts__info">
+      <div class="contacts__info-item">
+        <span class="contacts__item-key">e-mail:</span>
+        <a class="contacts__item-val contacts__item-val--mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+      </div>
+      <div class="contacts__info-item">
+        <span class="contacts__item-key">адрес:</span>
+        <span
+          class="contacts__item-val">г. Санкт-Петербург,<br/> ул. Большая Конюшенная,<br/> д.19/8, офис 101</span>
+      </div>
+    </div>
 
     <div class="contacts__map"></div>
 
@@ -280,7 +279,7 @@
 
 <section class="popup">
   <div class="popup__inner">
-    <div class="popup__title">Добавить в корзину</div>
+    <h2 class="popup__title">Добавить <br /> в корзину</h2>
     <p class="popup__text">Выберите размер:</p>
 
     <form action="https://echo.htmlacademy.ru/" method="post">

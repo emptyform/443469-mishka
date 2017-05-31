@@ -2,11 +2,12 @@
   @include centralize;
 }
 
-.about__title {
+.contacts__title {
   font-size: 1.8em;
   line-height: 1.666666;
   font-weight: 700;
   padding: 0 $content-space;
+  margin: 0 0 25px;
 }
 
 .contacts__info {
@@ -16,7 +17,8 @@
 .contacts__info-item {
   font-size: 1.5em;
   line-height: 2;
-
+  @include clearfix;
+  margin-bottom: 30px;
 }
 
 .contacts__item-key {
@@ -26,6 +28,7 @@
 
 .contacts__item-val {
   float: left;
+  max-width: 190px;
 
   &--mail {
     color: $clr-def;
@@ -53,6 +56,7 @@
 
   }
 }
+
 .reviews__write-wrap {
   padding: 0 $content-space;
 }
