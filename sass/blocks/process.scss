@@ -1,0 +1,57 @@
+.process {
+  @include centralize;
+  padding: 0 $content-space;
+}
+
+.process__title {
+  font-size: 1.7em;
+  line-height: 1.41176;
+  color: $clr-title;
+  font-weight: 700;
+  border: 1px solid $clr-border;
+  padding: 23px 40px 24px 90px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.process__video {
+  height: 150px;
+  position: relative;
+}
+
+.process__video-play {
+  position: absolute;
+  top:50%;
+  margin-top: -38px;
+  left: 50%;
+  margin-left: -50px;
+  width: 101px;
+  height: 77px;
+  cursor: pointer;
+}
+
+.process__bottom {
+  padding: $content-space;
+  border-left: 1px solid $clr-border;
+  border-bottom: 1px solid $clr-border;
+  border-right: 1px solid $clr-border;
+}
+
+.process__text {
+  font-size: 1.3em;
+  line-height: 1.84615;
+  margin: 0 0 30px;
+}
+
+.process__button {
+  width: 100%;
+}
+
+.process__title-img {
+  fill: $color-main;
+  position: absolute;
+  left: 33px;
+  top: 30px;
+  width: 32px;
+  height: 32px;
+}

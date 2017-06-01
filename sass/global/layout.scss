@@ -36,4 +36,17 @@ main {
   @include box-sizing;
   font-weight: 700;
   text-transform: uppercase;
+
+  &--popup {
+    background-color:$color-main;
+    border-color: $color-main;
+    color:#fff;
+    width: 100%;
+
+  }
+}
+
+
+.hidden {
+  display: none;
 }

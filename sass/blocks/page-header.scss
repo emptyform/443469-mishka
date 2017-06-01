@@ -6,8 +6,8 @@
   @include clearfix;
 
   background-color: #fff;
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
+  border-top: 1px solid $clr-border;
+  border-bottom: 1px solid $clr-border;
   height: 78px;
   position: fixed;
   top: 0;

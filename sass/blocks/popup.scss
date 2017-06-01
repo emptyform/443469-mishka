@@ -18,6 +18,7 @@
   text-align: center;
   border-top: 1px solid #c7c7c7;
   box-shadow: 0 7px 10px rgba(#000101, 0.25);
+  padding: 40px $content-space 45px;
 }
 
 .popup__title {
@@ -26,8 +27,40 @@
   font-weight: 700;
   color: $clr-title;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .popup__text {
   font-size: 1.5em;
+  margin: 25px 0;
+}
+
+.popup__button {
+  margin-top: 30px;
+}
+
+.popup__sizes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup__sizes-text {
+  font-size: 1.7em;
+  font-weight: 700;
+  padding: 8px 34px;
+  border: 2px solid $clr-border;
+  display: block;
+}
+
+.popup__sizes-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+  &:checked {
+
+    + .popup__sizes-text {
+      border-color: $color-main;
+    }
+  }
 }

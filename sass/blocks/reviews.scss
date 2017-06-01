@@ -52,7 +52,7 @@
   width: 50%;
   @include box-sizing;
   padding: 11px;
-  border: 1px solid #ececec;
+  border: 1px solid $clr-border;
   text-align: center;
   float: left;
   cursor: pointer;

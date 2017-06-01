@@ -1,0 +1,9 @@
+.preform-description {
+@include centralize;
+  padding: 0 $content-space;
+}
+
+.preform-description__text {
+  font-size: 1.3em;
+  line-height: 1.84615;
+}

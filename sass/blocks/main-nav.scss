@@ -10,11 +10,10 @@
   width: 20px;
   height: 14px;
   cursor: pointer;
-
   @include bg(0, 0, 'icon-menu-open.svg');
 
   &--open {
-    @include bg('icon-menu-close.svg');
+    @include bg(0,0,'icon-menu-close.svg');
     width: 21px;
     height: 20px;
   }
@@ -23,4 +22,44 @@
 
 .main-nav__wrapper {
   display: none;
+  text-align: left;
+
+  &--open {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 80px;
+    z-index: 2;
+    background-color: #fff;
+
+  }
+}
+
+.main-nav__item {
+  @include link-block;
+  border-bottom: 1px solid $clr-border;
+  font-size: 1.7em;
+  line-height: 80px;
+  font-weight: 700;
+  color:$clr-title;
+  padding-left: 77px;
+  position: relative;
+}
+.main-nav__item-img {
+  position: absolute;
+  left: 35px;
+  top:50%;
+  margin-top: -9px;
+  fill:rgba(#231F20,0.2);
+
+  &--search {
+    width: 18px;
+    height: 19px;
+
+  }
+  &--cart {
+    width: 21px;
+    height: 18px;
+  }
 }
