@@ -1,25 +1,16 @@
 $global-font: 'Open Sans', Arial, sans-serif;
-$global-font_bold: 'Open Sans Bold', Arial, sans-serif;
-
-$clr-def:#444444;
-$clr-def_hover:#444444;
-
-$clr-title:#000000;
-$clr-title_hover:rgba($clr-title,0.6);
-$clr-title_down:rgba($clr-title,0.3);
-
+$color-default:#444444;
+$color-default_hover:#444444;
+$color-title:#000000;
+$color-title_hover:rgba($color-title,0.6);
+$color-title_down:rgba($color-title,0.3);
 $color-main:#63d1bb;
 $color-main-dark:#149080;
 $color-main_border:#62d1ba;
-
-$clr-border:#ececec;
-
+$color-border:#ececec;
 $content-space:30px;
-
-
 $screen-xs: 0;
 $screen-sm: 480px;
 $screen-md: 768px;
 $screen-lg: 992px;
 $screen-xl: 1200px;
-

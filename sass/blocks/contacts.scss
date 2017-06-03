@@ -31,7 +31,7 @@
   max-width: 190px;
 
   &--mail {
-    color: $clr-def;
+    color: $color-default;
     border-bottom: 1px solid $color-main_border;
     text-decoration: none;
   }
@@ -50,10 +50,9 @@
     @include bg(0, 0, 'icon-map-pin.svg');
     width: 68px;
     height: 100px;
-    top: 170px;
+    top: 50%;
     left: 50%;
-    margin-left: -34px;
-
+    transform: translate(-50%, -50%);
   }
 }
 

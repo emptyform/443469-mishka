@@ -16,7 +16,6 @@
   font-weight: 700;
   text-transform: uppercase;
 
-
 }
 
 .promo__descr-text {
@@ -33,7 +32,7 @@
 }
 
 .promo__info-item {
-  border-bottom: 1px solid $clr-border;
+  border-bottom: 1px solid $color-border;
   padding: 10px 0;
   @include clearfix;
 }
@@ -46,9 +45,11 @@
 .promo__item-val {
   float: left;
 }
+
 .promo__order-block {
   margin-bottom: 30px;
 }
+
 .promo__image {
   @include bg(50%, 50%, 'triple-set-mobile@1x.jpg', no-repeat);
   background-size: cover;
@@ -58,12 +59,11 @@
 .promo__order-price {
   font-size: 1.7em;
   font-weight: 700;
-  color: $clr-def;
+  color: $color-default;
   text-align: center;
   margin: 25px 0;
 }
 
 .promo__order {
   width: 100%;
-
 }

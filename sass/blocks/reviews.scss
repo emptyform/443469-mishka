@@ -7,7 +7,7 @@
 .reviews__title {
   font-size: 2.5em;
   line-height: 1.2;
-  color: $clr-title;
+  color: $color-title;
   font-weight: 700;
   margin:25px 0;
 }
@@ -30,12 +30,12 @@
   font-size: 1.7em;
   font-weight: 700;
   font-style: normal;
-  color: $clr-title;
+  color: $color-title;
 }
 
 .reviews__item-mail {
   font-size: 1.7em;
-  color: $clr-def;
+  color: $color-default;
   @include link-block;
 }
 
@@ -52,7 +52,7 @@
   width: 50%;
   @include box-sizing;
   padding: 11px;
-  border: 1px solid $clr-border;
+  border: 1px solid $color-border;
   text-align: center;
   float: left;
   cursor: pointer;

@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  color: $clr-def;
+  color: $color-default;
   font: 400 62.5%/1.84615 $global-font, Arial, Helvetica, sans-serif;
 }
 
@@ -30,8 +30,8 @@ main {
   user-select: none;
   background-image: none;
   //border: 1px solid transparent;
-  border: 2px solid $clr-def;
-  color: $clr-def;
+  border: 2px solid $color-default;
+  color: $color-default;
   background-color: #fff;
   @include box-sizing;
   font-weight: 700;
@@ -45,7 +45,6 @@ main {
 
   }
 }
-
 
 .hidden {
   display: none;

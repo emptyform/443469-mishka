@@ -18,27 +18,27 @@
 
 .catalog-item__title {
   font-size: 1.7em;
-  color: $clr-title;
+  color: $color-title;
   display: block;
   font-weight: 700;
 }
 
 .catalog-item__descr {
-  border-left: 1px solid $clr-border;
-  border-right: 1px solid $clr-border;
+  border-left: 1px solid $color-border;
+  border-right: 1px solid $color-border;
   padding: 20px $content-space 0;
 }
 
 .catalog-item__text {
   font-size: 1.3em;
-  color: $clr-def;
+  color: $color-default;
   display: block;
-  border-bottom: 1px solid $clr-border;
+  border-bottom: 1px solid $color-border;
   padding-bottom: 30px;
 }
 
 .catalog-item__bottom {
-  border: 1px solid $clr-border;
+  border: 1px solid $color-border;
   border-top: 0;
   padding: 20px $content-space;
   @include clearfix;
@@ -46,7 +46,7 @@
 
 .catalog-item__price {
   font-size: 1.7em;
-  color: $clr-title;
+  color: $color-title;
   font-weight: 700;
 }
 

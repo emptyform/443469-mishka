@@ -1,13 +1,9 @@
-/// <reference path="variables.scss" />
-/// <reference path="mixins.scss" />
-
 .page-header {
-  //@include centralize;
   @include clearfix;
 
   background-color: #fff;
-  border-top: 1px solid $clr-border;
-  border-bottom: 1px solid $clr-border;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
   height: 78px;
   position: fixed;
   top: 0;
@@ -27,6 +23,6 @@
   height: 35px;
   @include inblock();
   margin-top: 22px;
-  color: $clr-def;
-  cursor:pointer;
+  color: $color-default;
+  cursor: pointer;
 }

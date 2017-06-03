@@ -20,7 +20,7 @@
 
 .page-footer__copyright {
   font-size: 1.9em;
-  color: $clr-title;
+  color: $color-title;
   text-align: center;
   line-height: 80px;
   position: relative;
@@ -53,19 +53,6 @@
 }
 
 .social-link {
-
   fill: #231F20;
   margin: 0 20px;
-
-  &--insta {
-
-  }
-
-  &--fb {
-
-  }
-
-  &--tw {
-
-  }
 }
