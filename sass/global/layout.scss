@@ -1,0 +1,51 @@
+html {
+  overflow-y: scroll;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: $color-default;
+  font: 400 62.5%/1.84615 $global-font, Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding-top: 80px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px;
+  margin-bottom: 0;
+  font-size: 1.7em;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  //border: 1px solid transparent;
+  border: 2px solid $color-default;
+  color: $color-default;
+  background-color: #fff;
+  @include box-sizing;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &--popup {
+    background-color:$color-main;
+    border-color: $color-main;
+    color:#fff;
+    width: 100%;
+
+  }
+}
+
+.hidden {
+  display: none;
+}

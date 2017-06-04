@@ -1,0 +1,28 @@
+.page-header {
+  @include clearfix;
+
+  background-color: #fff;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  height: 78px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.page-header__title {
+  @include hide-text;
+}
+
+.page-header__logo {
+  background: url('../img/logo-mobile.svg') 0 0 no-repeat;
+  width: 86px;
+  height: 35px;
+  @include inblock();
+  margin-top: 22px;
+  color: $color-default;
+  cursor: pointer;
+}

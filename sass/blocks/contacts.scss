@@ -1,0 +1,65 @@
+.contacts {
+  @include centralize;
+}
+
+.contacts__title {
+  font-size: 1.8em;
+  line-height: 1.666666;
+  font-weight: 700;
+  padding: 0 $content-space;
+  margin: 0 0 25px;
+}
+
+.contacts__info {
+  padding: 0 $content-space;
+}
+
+.contacts__info-item {
+  font-size: 1.5em;
+  line-height: 2;
+  @include clearfix;
+  margin-bottom: 30px;
+}
+
+.contacts__item-key {
+  min-width: 70px;
+  float: left;
+}
+
+.contacts__item-val {
+  float: left;
+  max-width: 190px;
+
+  &--mail {
+    color: $color-default;
+    border-bottom: 1px solid $color-main_border;
+    text-decoration: none;
+  }
+}
+
+.contacts__map {
+  @include bg(50%, 50%, 'map-mobile@1x.jpg');
+  position: relative;
+  height: 457px;
+  width: 100%;
+  @include clearfix;
+
+  &::after {
+    content: '';
+    position: absolute;
+    @include bg(0, 0, 'icon-map-pin.svg');
+    width: 68px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.reviews__write-wrap {
+  padding: 0 $content-space;
+}
+
+.reviews__write {
+  width: 100%;
+}

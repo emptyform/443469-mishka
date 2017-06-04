@@ -1,0 +1,135 @@
+.order-form {
+  @include centralize;
+  padding: 0 $content-space;
+}
+
+.form-group {
+}
+
+.form-group__legend {
+  font-size: 1.7em;
+  color: $color-main;
+  text-transform: uppercase;
+}
+
+.form-group__field {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.checkbox-component,
+.radio-component {
+  padding-left: 60px;
+  margin-bottom: 20px;
+}
+
+.checkbox-component__control,
+.radio-component__control {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+  + .checkbox-component__text,
+  + .radio-component__text {
+    position: relative;
+    min-height: 42px;
+    display: block;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      background-color: #fff;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -60px;
+      border: 2px solid $color-default;
+    }
+  }
+
+  + .radio-component__text {
+    &::before {
+      border-radius: 100%;
+    }
+  }
+}
+
+.radio-component__control:checked {
+
+  + .radio-component__text {
+
+    &::after {
+      content: '';
+      position: absolute;
+      border-radius: 100%;
+      background-color: $color-main_border;
+      width: 16px;
+      height: 16px;
+      left: -48px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.checkbox-component__control:checked {
+
+  + .checkbox-component__text {
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: url('../img/icon-tick.svg') 0 0 no-repeat;
+      background-size: cover;
+      width: 22px;
+      height: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -50px;
+    }
+  }
+}
+
+.checkbox-component__text,
+.radio-component__text {
+  font-weight: 700;
+  color: $color-title;
+  font-size: 1.7em;
+}
+
+.form-group__input {
+  width: 100%;
+  line-height: 50px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #000;
+  font-size: 1.7em;
+
+  &::-webkit-input-placeholder {
+    color: rgba($color-default, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-main_border;
+  }
+
+  &--area {
+    resize: none;
+    line-height: normal;
+  }
+}
+
+.form-group__info-text {
+  font-size: 1.4em;
+}
+
+.form-action {
+
+}
+
+.form-button {
+  width: 100%;
+}
