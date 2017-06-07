@@ -33,3 +33,17 @@
     z-index: 1;
   }
 }
+@media screen and (min-width:768px) {
+  .page-header__logo {
+    position: absolute;
+    z-index: 1;
+  }
+  .page-header {
+    @include centralize;
+    padding: 0 $content-space-big;
+    @include clearfix;
+  }
+}
+@media screen and (min-width:1150px)  {
+
+}

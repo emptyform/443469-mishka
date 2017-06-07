@@ -67,3 +67,56 @@
 .promo__order {
   width: 100%;
 }
+
+@media screen and (min-width: 768px) {
+  .promo {
+    padding: 0 $content-space-big;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .promo__descr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .promo__descr-title {
+    font-size: 4.3em;
+  }
+
+  .promo__descr-text {
+    width: 50%;
+    padding-right: 44px;
+    box-sizing: border-box;
+  }
+
+  .promo__descr-mark {
+    margin-left: auto;
+    align-self: center;
+    max-width: 70px;
+    padding-right: 28px;
+    text-align: center;
+
+  }
+  .promo__info {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 44px;
+  }
+  .promo__order-block {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 44px;
+  }
+  .promo__image {
+    //position: absolute;
+    left: 50%;
+    top: 164px;
+    //max-width: 334px;
+    width: 50%;
+  }
+}
+
+

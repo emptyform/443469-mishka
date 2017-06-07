@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  float: right;
+  //float: right;
 }
 .main-nav--open {
 
@@ -74,6 +74,7 @@
     display: none;
   }
 
+
   .main-nav--nojs .main-nav__wrapper {
     position: fixed;
     left: 0;
@@ -87,11 +88,34 @@
   .main-nav__toggle {
     display: none;
   }
-  .main-nav__wrapper {
+  .main-nav--open .main-nav__wrapper {
     display: flex;
+    position:static;
   }
+
   .main-nav__item {
     border-bottom: 0;
 
   }
+
+
+  .main-nav__wrapper {
+    display:flex;
+
+
+  }
+  .main-nav__list {
+    display: flex;
+    .main-nav__item {
+      padding-left: 0;
+    }
+  }
+  .main-nav__additional{
+    display: flex;
+    margin-left: auto;
+  }
+  .main-nav__text{
+    @include hide-text;
+  }
+
 }
