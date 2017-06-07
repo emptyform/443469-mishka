@@ -4,13 +4,9 @@
   background-color: #fff;
   border-top: 1px solid $color-border;
   border-bottom: 1px solid $color-border;
-  height: 78px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+
   text-align: center;
-  z-index: 1;
+
 }
 
 .page-header__title {
@@ -25,4 +21,15 @@
   margin-top: 22px;
   color: $color-default;
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    height: 78px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
 }
