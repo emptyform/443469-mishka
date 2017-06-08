@@ -56,3 +56,27 @@
   fill: #231F20;
   margin: 0 20px;
 }
+
+@media screen and #{$tablet-widths} {
+
+  .page-footer {
+    height: 144px;
+  }
+
+  .page-footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .social-links {
+    border-bottom: 0;
+  }
+
+  .page-footer__logo {
+    display: block;
+    margin-top: 22px;
+  }
+}
+

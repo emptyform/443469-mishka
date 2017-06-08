@@ -1,12 +1,9 @@
 .page-header {
   @include clearfix;
-
   background-color: #fff;
   border-top: 1px solid $color-border;
   border-bottom: 1px solid $color-border;
-
   text-align: center;
-
 }
 
 .page-header__title {
@@ -23,7 +20,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and #{$mobile-widths-only} {
   .page-header {
     height: 78px;
     position: fixed;
@@ -33,17 +30,25 @@
     z-index: 1;
   }
 }
-@media screen and (min-width:768px) {
-  .page-header__logo {
-    position: absolute;
-    z-index: 1;
-  }
+@media screen and #{$tablet-widths} {
+
   .page-header {
     @include centralize;
     padding: 0 $content-space-big;
     @include clearfix;
+    display: flex;
+    position: static;
   }
-}
-@media screen and (min-width:1150px)  {
 
+}
+@media screen and #{$desktop-widths}  {
+  .page-header {
+    position: relative;
+    justify-content: space-around;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    z-index:3;
+  }
 }

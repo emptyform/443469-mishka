@@ -9,7 +9,7 @@
   line-height: 1.2;
   color: $color-title;
   font-weight: 700;
-  margin:25px 0;
+  margin: 25px 0;
 }
 
 .reviews__wrapper {
@@ -75,4 +75,36 @@
 .reviews__write {
   width: 100%;
   margin-top: 39px;
+}
+
+@media screen and #{$tablet-widths} {
+
+  .reviews {
+    padding: 50px $content-space-big 50px;
+    position: relative;
+    background: url("../../img/review@1x.jpg") 0 100% no-repeat;
+  }
+
+  .reviews__title {
+    font-size: 4.3em;
+  }
+
+  .rewiews__button-group {
+    margin-top: 25px;
+    position: absolute;
+    right: $content-space-big;
+    bottom: 10px;
+  }
+
+  .reviews__button {
+    border: none;
+  }
+
+  .reviews__write {
+    position: absolute;
+    top: 70px;
+    right: $content-space-big;
+    width: 175px;
+    margin-top: 0;
+  }
 }
