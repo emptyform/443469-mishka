@@ -1,8 +1,8 @@
 .top-promo {
   margin-bottom: 25px;
 
-
 }
+
 .top-promo__bg {
   padding: 75px 30px 0;
   height: 207px;
@@ -10,7 +10,7 @@
   background-position: 50% 50%;
   background-size: cover;
 
-  &--grey{
+  &--grey {
     background: #f1f1f1;
     padding-top: 65px;
     height: 105px;
@@ -63,23 +63,30 @@
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and #{$tablet-widths} {
 
   .top-promo__bg {
-    height:583px;
+    height: 583px;
     padding-top: 160px;
+
+    &--subpage {
+      height: 135px;
+      padding-top: 90px;
+    }
   }
+
   .top-promo__title {
-@include centralize;
+    @include centralize;
     font-size: 4.3em;
   }
+
   .top-promo__wrapper {
     @include centralize;
     padding: 0 $content-space-big;
     display: flex;
-
   }
+
   .top-promo__item {
-flex-grow: 1;
+    flex-grow: 1;
   }
 }

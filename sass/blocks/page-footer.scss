@@ -72,6 +72,9 @@
 
   .social-links {
     border-bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .page-footer__logo {
