@@ -253,6 +253,15 @@
     order: 2;
     align-self: center;
   }
+
+  .form-group__field {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-group__field-text{
+    margin-right: 25px;
+  }
 }
 
 @media screen and #{$desktop-widths} {

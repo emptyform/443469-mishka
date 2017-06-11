@@ -1,33 +1,21 @@
 .page-header {
-  @include clearfix;
   background-color: #fff;
   border-top: 1px solid $color-border;
   border-bottom: 1px solid $color-border;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .page-header__title {
   @include hide-text;
 }
 
-.page-header__logo {
-  background: url('../img/logo-mobile.svg') 0 0 no-repeat;
-  width: 86px;
-  height: 35px;
-  @include inblock();
-  margin-top: 22px;
-  color: $color-default;
-  cursor: pointer;
-}
+
 
 @media screen and #{$mobile-widths-only} {
   .page-header {
-    height: 78px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
+
   }
 }
 @media screen and #{$tablet-widths} {
@@ -35,9 +23,13 @@
   .page-header {
     @include centralize;
     padding: 0 $content-space-big;
-    @include clearfix;
     display: flex;
-    position: static;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    height: 89px;
   }
 
 }
