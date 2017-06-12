@@ -81,6 +81,7 @@
 
   .reviews {
     padding: 50px $content-space-big 50px;
+    width: $content-width-tablet;
     position: relative;
     background: url("../../img/review@1x.jpg") 0 100% no-repeat;
   }
@@ -106,5 +107,11 @@
     right: $content-space-big;
     width: 175px;
     margin-top: 0;
+  }
+}
+
+@media screen and #{$desktop-widths} {
+  .reviews {
+    width: $content-width-desktop;
   }
 }

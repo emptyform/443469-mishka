@@ -27,11 +27,12 @@
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and #{$tablet-widths} {
   .about {
     padding: 0 $content-space-big;
-
+    width: $content-width-tablet;
   }
+
     .about__title {
     font-size: 4.3em;
   }
@@ -45,5 +46,11 @@
 
   .about__item {
     width: 50%;
+  }
+}
+
+@media screen and #{$desktop-widths} {
+  .about {
+    width: $content-width-desktop;
   }
 }

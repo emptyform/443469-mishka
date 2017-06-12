@@ -23,12 +23,11 @@
   .page-header {
     @include centralize;
     padding: 0 $content-space-big;
+    width: $content-width-tablet;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
     height: 89px;
   }
 
@@ -37,6 +36,7 @@
   .page-header {
     position: relative;
     justify-content: space-around;
+    width: $content-width-desktop;
   }
 
   .page-header__logo {

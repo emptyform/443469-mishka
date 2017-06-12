@@ -27,10 +27,8 @@
 
 @mixin centralize() {
   margin: 0 auto;
-  min-width: 320px;
+  min-width: 260px;
   max-width: 1150px;
-  @include box-sizing();
-
 }
 
 @mixin hide-text() {

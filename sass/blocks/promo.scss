@@ -79,6 +79,7 @@
 @media screen and #{$tablet-widths} {
   .promo {
     padding: 0 $content-space-big;
+    width: $content-width-tablet;
     position: relative;
     flex-wrap: wrap;
     height: 620px;
@@ -123,6 +124,7 @@
 
   .promo {
     height: 555px;
+    width: $content-width-desktop;
   }
 
   .promo__descr-mark {

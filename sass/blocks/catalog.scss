@@ -73,6 +73,7 @@
 @media screen and #{$tablet-widths} {
   .catalog {
     padding: 0 $content-space-big;
+    width: $content-width-tablet;
   }
 
   .catalog-item {
@@ -118,6 +119,7 @@
   .catalog {
     display: flex;
     justify-content: space-between;
+    width: $content-width-desktop;
   }
 
   .catalog-item__link {

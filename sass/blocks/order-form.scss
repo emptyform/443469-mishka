@@ -197,10 +197,12 @@
 @media screen and #{$tablet-widths} {
   .order-form {
     padding: 0 $content-space-big;
+    width: $content-width-tablet;
   }
 
   .preform-description {
     padding: 0 $content-space-big;
+    width: $content-width-tablet;
   }
 
   .preform-description__text {
@@ -265,6 +267,15 @@
 }
 
 @media screen and #{$desktop-widths} {
+
+  .order-form {
+    width: $content-width-desktop;
+  }
+
+  .preform-description {
+    width: $content-width-desktop;
+  }
+
   .form-action {
     margin-left: 175px;
   }

@@ -68,6 +68,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: $content-width-tablet;
   }
 
   .social-links {
@@ -80,5 +81,11 @@
   .page-footer__logo {
     display: block;
     margin-top: 22px;
+  }
+}
+
+@media screen and #{$desktop-widths} {
+  .page-footer__inner {
+    width: $content-width-desktop;
   }
 }

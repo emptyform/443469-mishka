@@ -74,6 +74,9 @@
   .contacts__title {
     font-size: 4.3em;
     padding: 0 $content-space-big;
+    width: $content-width-tablet;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .contacts__map {
@@ -84,6 +87,9 @@
     display: flex;
     justify-content: space-between;
     padding: 0 $content-space-big;
+    width: $content-width-tablet;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .contacts__info-item {
@@ -97,6 +103,7 @@
   .contacts__write-wrap {
     margin-top: 55px;
     padding: 0 $content-space-big;
+    width: $content-width-tablet;
     text-align: center;
   }
 
@@ -109,9 +116,11 @@
 
   .contacts {
     position: relative;
+    width: $content-width-desktop;
   }
   .contacts__title {
     padding-left: 175px;
+    width: $content-width-desktop;
   }
 
   .contacts__info {
