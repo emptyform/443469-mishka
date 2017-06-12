@@ -9,8 +9,11 @@ navToggle.addEventListener('click', function (event) {
 
   if (mainNav.classList.contains('main-nav--open')) {
     mainNav.classList.remove('main-nav--open');
+    console.log('fff');
 
   } else {
     mainNav.classList.add('main-nav--open');
+    console.log('2222fff')
   }
 });
+
