@@ -16,4 +16,3 @@ navToggle.addEventListener('click', function (event) {
     console.log('2222fff')
   }
 });
-
