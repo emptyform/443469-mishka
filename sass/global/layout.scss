@@ -12,10 +12,6 @@ body {
   font: 400 62.5%/1.84615 $global-font, Arial, Helvetica, sans-serif;
 }
 
-main {
-  padding-top: 80px;
-}
-
 .btn {
   display: inline-block;
   padding: 12px;
@@ -42,7 +38,6 @@ main {
     border-color: $color-main;
     color:#fff;
     width: 100%;
-
   }
 }
 

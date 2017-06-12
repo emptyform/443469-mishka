@@ -1,8 +1,8 @@
 .top-promo {
   margin-bottom: 25px;
 
-
 }
+
 .top-promo__bg {
   padding: 75px 30px 0;
   height: 207px;
@@ -10,7 +10,7 @@
   background-position: 50% 50%;
   background-size: cover;
 
-  &--grey{
+  &--grey {
     background: #f1f1f1;
     padding-top: 65px;
     height: 105px;
@@ -61,4 +61,63 @@
     right: 26px;
     top: 20px;
   }
+}
+
+@media screen and #{$tablet-widths} {
+
+  .top-promo__bg {
+    height: 583px;
+    padding: 160px $content-space-big 0;
+
+    &--subpage {
+      height: 135px;
+      padding-top: 90px;
+    }
+  }
+
+  .top-promo__title {
+    @include centralize;
+    font-size: 4.3em;
+  }
+
+  .top-promo__wrapper {
+    @include centralize;
+    padding: 0 $content-space-big;
+    display: flex;
+  }
+
+  .top-promo__item {
+    flex-grow: 1;
+    padding: 34px 0 35px 30px;
+  }
+
+  .top-promo__bg--subpage,.top-promo__wrapper {
+    position: relative;
+
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      background-repeat: repeat;
+      height: 6px;
+      background-size: 40px 20px;
+      background-image: radial-gradient(circle at 11px -7px, transparent 12px, #fff 13px);
+    }
+
+    &:after{
+      content: "";
+      position: absolute;
+      background-repeat: repeat;
+      height: 10px;
+      background-size: 40px 10px;
+      background-image: radial-gradient(circle at 25px 13px, #fff 12px, transparent 13px);
+      right: 0;
+      left: 6px;
+      bottom: 1px;
+    }
+  }
+
 }

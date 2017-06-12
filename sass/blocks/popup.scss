@@ -65,3 +65,30 @@
     }
   }
 }
+
+
+@media screen and #{$tablet-widths} {
+  .popup__inner {
+    width: 568px;
+    box-sizing: border-box;
+    left:50%;
+    transform:translateX(-50%);
+    padding-left: 106px;
+    padding-right: 106px;
+  }
+
+  .popup__title {
+    width: auto;
+    font-size: 3em;
+  }
+
+
+  .popup__text {
+    font-size: 1.7em;
+  }
+
+  .popup__sizes-text {
+    width: 112px;
+    box-sizing: border-box;
+  }
+}

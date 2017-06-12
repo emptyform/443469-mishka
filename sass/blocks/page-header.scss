@@ -1,28 +1,46 @@
 .page-header {
-  @include clearfix;
-
   background-color: #fff;
   border-top: 1px solid $color-border;
   border-bottom: 1px solid $color-border;
-  height: 78px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  text-align: center;
-  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .page-header__title {
   @include hide-text;
 }
 
-.page-header__logo {
-  background: url('../img/logo-mobile.svg') 0 0 no-repeat;
-  width: 86px;
-  height: 35px;
-  @include inblock();
-  margin-top: 22px;
-  color: $color-default;
-  cursor: pointer;
+
+
+@media screen and #{$mobile-widths-only} {
+  .page-header {
+
+  }
+}
+@media screen and #{$tablet-widths} {
+
+  .page-header {
+    @include centralize;
+    padding: 0 $content-space-big;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    height: 89px;
+  }
+
+}
+@media screen and #{$desktop-widths}  {
+  .page-header {
+    position: relative;
+    justify-content: space-around;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    z-index:3;
+  }
 }
