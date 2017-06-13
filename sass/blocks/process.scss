@@ -73,6 +73,7 @@
 @media screen and #{$tablet-widths} {
   .process {
     padding: 0 $content-space-big;
+    width: $content-width-tablet;
     display: flex;
     flex-direction: column;
   }
@@ -104,6 +105,7 @@
 @media screen and #{$desktop-widths} {
   .process {
     flex-direction: row;
+    width: $content-width-desktop;
   }
 
   .process__video {

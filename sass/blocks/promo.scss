@@ -7,6 +7,7 @@
 
 .promo__descr-title {
   font-size: 2.5em;
+  line-height: 34px;
   font-weight: 700;
   margin: 0;
 }
@@ -17,6 +18,7 @@
   color: #63d1bb;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 5px;
 
 }
 
@@ -24,13 +26,13 @@
   font-size: 1.5em;
   line-height: 1.6;
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .promo__info {
   font-size: 1.5em;
   line-height: 1.33333;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .promo__info-item {
@@ -63,7 +65,7 @@
   font-weight: 700;
   color: $color-default;
   text-align: center;
-  margin: 25px 0;
+  margin: 20px 0 22px;
 }
 
 .promo__order {
@@ -86,7 +88,8 @@
   }
 
   .promo__descr {
-    width: 50%;
+    display:flex;
+    justify-content: space-between;
   }
 
   .promo__descr-title {
@@ -117,6 +120,9 @@
   .promo__image {
     height: 400px;
     width: 50%;
+    position: absolute;
+    right: 0;
+    top: 140px;
   }
 }
 
@@ -160,6 +166,7 @@
   .promo__image {
     height: 637px;
     width: 50%;
+    position: static;
   }
 
   .promo__descr-title {

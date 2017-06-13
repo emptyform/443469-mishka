@@ -1,12 +1,14 @@
 .top-promo {
   margin-bottom: 25px;
   background-color: #f9f9f9;
+
+
 }
 
 .top-promo__bg {
-  padding: 75px $content-space 0;
-  height: 207px;
-  @include bg(0, 0, 'hero-mobile@1x.jpg');
+  padding: 71px $content-space 0;
+  height: 211px;
+  @include bg(0, 0, 'hero-mobile@1x.jpg',#f9f9f9);
   background-position: 50% 50%;
   background-size: cover;
   @include centralize;
@@ -30,7 +32,7 @@
 .top-promo__item {
   background-color: $color-main;
   position: relative;
-  padding: 27px 0 28px 30px;
+  padding: 28px 0 29px 30px;
   @include link-block;
 
   &--dark {
@@ -40,9 +42,9 @@
 
 .top-promo__item-text {
   font-size: 1.9em;
-  line-height: 1.26315;
   color: #ffffff;
   font-weight: 700;
+  line-height: 22px;
 }
 
 .top-promo__item-img {
@@ -66,8 +68,17 @@
 
 @media screen and #{$tablet-widths} {
 
+  .top-promo {
+    position: relative;
+    height: 744px;
+
+    &--subpage {
+      height: auto;
+    }
+  }
+
   .top-promo__bg {
-    height: 583px;
+    height: 552px;
     width: $content-width-tablet;
     padding-left: $content-space-big;
     padding-right: $content-space-big;
@@ -87,6 +98,8 @@
     padding: 0 $content-space-big;
     width: $content-width-tablet;
     display: flex;
+    position: relative;
+    bottom: 0;
   }
 
   .top-promo__item {
@@ -98,28 +111,39 @@
     position: relative;
 
     &:before{
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 1;
-      background-repeat: repeat;
-      height: 6px;
-      background-size: 40px 20px;
-      background-image: radial-gradient(circle at 11px -7px, transparent 12px, #fff 13px);
+      //content: "";
+      //position: absolute;
+      //left: 0;
+      //bottom: 0;
+      //right: 0;
+      //z-index: 1;
+      //background-repeat: repeat;
+      //height: 6px;
+      //background-size: 40px 20px;
+      //background-image: radial-gradient(circle at 11px -7px, transparent 12px, #fff 13px);
     }
 
     &:after{
-      content: "";
+      //content: "";
+      //position: absolute;
+      //background-repeat: repeat;
+      //height: 10px;
+      //background-size: 40px 10px;
+      //background-image: radial-gradient(circle at 25px 13px, #fff 12px, transparent 13px);
+      //right: 0;
+      //left: 6px;
+      //bottom: 1px;
+
+      content: '';
       position: absolute;
-      background-repeat: repeat;
-      height: 10px;
-      background-size: 40px 10px;
-      background-image: radial-gradient(circle at 25px 13px, #fff 12px, transparent 13px);
-      right: 0;
-      left: 6px;
-      bottom: 1px;
+      bottom: 0;
+      display: block;
+      height: 20px;
+      width: 100%;
+      z-index: 100;
+      background-image: radial-gradient(circle at 10px 15px, #fff 12px, transparent 13px), radial-gradient(circle at 10px 0px, transparent 12px, #fff 13px);
+      background-repeat: repeat-x;
+      background-size: 40px 20px, 20px 20px;
     }
   }
 }
