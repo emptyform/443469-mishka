@@ -31,7 +31,7 @@
     margin-bottom: 26px;
   }
 
-  &--like{
+  &--like {
     margin-bottom: 20px;
     margin-left: 7px;
     padding-top: 5px;
@@ -63,26 +63,62 @@
   font-weight: 700;
 }
 
-
 @media screen and #{$tablet-widths} {
   .about {
     padding: 0 $content-space-big;
     width: $content-width-tablet;
   }
 
-    .about__title {
+  .about__title {
     font-size: 4.3em;
+    margin-left: -4px;
+    margin-bottom: 33px;
   }
 
   .about__wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 435px;
+    height: 436px;
+    margin-bottom: 0;
+  }
+
+  .about__item-text {
+    font-size: 2em;
   }
 
   .about__item {
     width: 50%;
+    margin-bottom: 60px;
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
+    }
+  }
+  .about__item-img {
+    margin-bottom: 19px;
+
+    &--price{
+      margin-bottom: 28px;
+    }
+
+    &--like{
+      margin-bottom: 20px;
+    }
+
+    &--love{
+      margin-bottom: 21px;
+    }
+
+    &--domestic {
+      margin-bottom: 29px;
+    }
+
+    &--gift {
+      margin-bottom: 22px;
+      margin-top: 0;
+    }
+
   }
 }
 

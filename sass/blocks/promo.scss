@@ -84,12 +84,26 @@
     width: $content-width-tablet;
     position: relative;
     flex-wrap: wrap;
-    height: 620px;
+    height: 600px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      display: block;
+      height: 16px;
+      width: 100%;
+      z-index: 100;
+      background-image: radial-gradient(circle at 10px 15px, #fff 12px, transparent 13px), radial-gradient(circle at 10px 0px, transparent 12px, #fff 13px);
+      background-repeat: repeat-x;
+      background-size: 40px 20px, 20px 20px;
+    }
   }
 
   .promo__descr {
     display:flex;
     justify-content: space-between;
+    margin-top: 29px;
   }
 
   .promo__descr-title {
@@ -98,7 +112,11 @@
 
   .promo__text {
     width: 50%;
+    margin-top: 54px;
+    line-height: 30px;
+    padding-right: 43px;
     box-sizing: border-box;
+    font-size: 1.7em;
   }
 
   .promo__descr-mark {
@@ -106,23 +124,36 @@
     align-self: center;
     max-width: 70px;
     text-align: center;
-
+    margin-right: 29px;
+    margin-top: 2px;
   }
+
   .promo__info {
     width: 50%;
     box-sizing: border-box;
+    margin-top: 19px;
+    padding-right: 43px;
   }
+
   .promo__order-block {
     width: 50%;
     box-sizing: border-box;
-
+    padding-right: 43px;
   }
+
+  .promo__order-price {
+    margin: 22px 0 28px;
+    font-size: 2em;
+  }
+
   .promo__image {
-    height: 400px;
-    width: 50%;
+    height: 403px;
+    width: 334px;
     position: absolute;
     right: 0;
-    top: 140px;
+    top: 127px;
+    margin-right: 51px;
+    box-sizing: border-box;
   }
 }
 
