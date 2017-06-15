@@ -83,12 +83,18 @@
   .page-footer__logo {
     display: block;
   }
+
   .page-footer__copyright-text {
     margin-top: 0;
   }
 }
 
 @media screen and #{$desktop-widths} {
+
+  .page-footer {
+    margin-top: 104px;
+  }
+
   .page-footer__inner {
     width: $content-width-desktop;
   }

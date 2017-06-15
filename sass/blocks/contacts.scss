@@ -40,12 +40,12 @@
     text-decoration: none;
   }
 }
+
 .contacts__item-val-text {
   position: relative;
 
-
   &:before {
-    content:'';
+    content: '';
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -142,12 +142,25 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    margin-top: 65px;
+    padding-top: 94px;
+  }
+
+  .contacts__title {
+    font-size: 5.3em;
+    margin-top: 54px;
+    margin-left: -5px;
+    margin-bottom: 31px;
   }
 
   .contacts__wrap {
     padding-left: 175px;
     width: 50%;
     box-sizing: border-box;
+  }
+
+  .contacts__info-item {
+    width: 100%;
   }
 
   .contacts__info {
@@ -157,10 +170,11 @@
   .contacts__map {
     width: 50%;
   }
+
   .contacts__write-wrap {
     position: absolute;
     bottom: 0;
-    left: 0;
     width: auto;
+    left: 124px;
   }
 }

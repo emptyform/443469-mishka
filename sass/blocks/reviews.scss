@@ -39,7 +39,7 @@
   @include link-block;
 }
 
-.rewiews__button-group {
+.reviews__button-group {
   margin-top: 28px;
 }
 
@@ -97,7 +97,7 @@
     line-height: 31px;
   }
 
-  .rewiews__button-group {
+  .reviews__button-group {
     margin-top: 0;
     position: absolute;
     right: 58px;
@@ -108,7 +108,7 @@
     border: none;
     width: auto;
 
-    +.reviews__button{
+    + .reviews__button {
       margin-left: 15px;
     }
   }
@@ -125,5 +125,26 @@
 @media screen and #{$desktop-widths} {
   .reviews {
     width: $content-width-desktop;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-position: 50px 100%;
+  }
+
+  .reviews__title {
+    font-size: 5.3em;
+    padding-left: 175px;
+  }
+
+  .reviews__wrapper {
+    padding-left: 175px;
+  }
+
+  .reviews__item-descr {
+    margin-bottom: 31px;
+    margin-top: 44px;
+  }
+
+  .reviews__button-group {
+    bottom: 102px;
   }
 }

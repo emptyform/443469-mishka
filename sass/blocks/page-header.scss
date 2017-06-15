@@ -22,14 +22,10 @@
     align-items: center;
     flex-direction: column;
     height: 89px;
-    border-top:0;
+    border-top: 0;
   }
-
-  .main-nav__item-img {
-    left:32px;
-  }
-
 }
+
 @media screen and #{$desktop-widths}  {
   .page-header {
     position: relative;
@@ -39,6 +35,6 @@
 
   .page-header__logo {
     position: absolute;
-    z-index:3;
+    z-index: 3;
   }
 }

@@ -1,6 +1,7 @@
 .catalog {
   @include centralize;
-  padding: 0 $content-space;
+  padding: 6px $content-space 0;
+
 }
 
 .catalog-item {
@@ -23,6 +24,7 @@
 
 .catalog-item__title {
   font-size: 1.7em;
+  line-height: 24px;
   color: $color-title;
   display: block;
   font-weight: 700;
@@ -35,31 +37,32 @@
 }
 
 .catalog-item__info {
-  padding: 20px $content-space 0;
+  padding: 27px $content-space 0;
 }
 
 .catalog-item__text {
   font-size: 1.3em;
   color: $color-default;
   display: block;
-  padding-bottom: 30px;
+  padding-bottom: 22px;
+  margin-top: 8px;
 }
 
 .catalog-item__bottom {
   border-top: 1px solid $color-border;
-  padding: 20px 0;
-  margin: 0 $content-space;
+  padding: 20px 0 24px;
+  margin: 0 27px;
 }
 
 .catalog-item__price {
-  font-size: 1.7em;
+  font-size: 1.5em;
   color: $color-title;
   font-weight: 700;
 }
 
 .catalog-item__cart {
   float: right;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .catalog-item__cart-img {
@@ -74,12 +77,29 @@
   .catalog {
     padding: 0 $content-space-big;
     width: $content-width-tablet;
+    margin-top: 67px;
   }
 
   .catalog-item {
     display: flex;
     min-height: 334px;
     margin-bottom: 54px;
+  }
+
+  .catalog-item__info {
+    padding: 25px 30px 25px 26px;
+  }
+
+  .catalog-item__price {
+    font-size: 1.7em;
+  }
+
+  .catalog-item__bottom {
+    margin: 0 31px;
+  }
+
+  .catalog-item__cart {
+    margin-top: 5px;
   }
 
   .catalog-item__img {
@@ -116,17 +136,18 @@
 }
 
 @media screen and #{$desktop-widths} {
+
   .catalog {
     display: flex;
     justify-content: space-between;
     width: $content-width-desktop;
+    margin-top: 127px;
   }
 
   .catalog-item__link {
     width: 100%;
     height: 462px;
   }
-
 
   .catalog-item__description {
     width: 100%;
@@ -137,7 +158,30 @@
   .catalog-item {
     flex-direction: column;
     min-height: 659px;
-    min-width:315px;
+    min-width: 315px;
+    margin-bottom: 57px;
+  }
+
+  .catalog-item__price {
+    line-height: 24px;
+  }
+
+  .catalog-item__bottom {
+    padding-bottom: 21px;
+    padding-top: 25px;
+    margin: 0px 25px 0;
+  }
+
+  .catalog-item__text {
+    padding-bottom: 14px;
+  }
+
+  .catalog-item__info {
+    padding-bottom: 0;
+  }
+
+  .catalog-item__cart {
+    margin-top: 0;
   }
 
 }

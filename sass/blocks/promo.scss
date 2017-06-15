@@ -101,7 +101,7 @@
   }
 
   .promo__descr {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     margin-top: 29px;
   }
@@ -160,8 +160,9 @@
 @media screen and #{$desktop-widths}{
 
   .promo {
-    height: 555px;
+    height: 683px;
     width: $content-width-desktop;
+    padding-bottom: 95px;
   }
 
   .promo__descr-mark {
@@ -175,11 +176,18 @@
     position: relative;
     box-sizing: border-box;
     width: 50%;
+    margin-top: 111px;
+  }
+
+  .promo__descr-title {
+    font-size: 5.3em;
   }
 
   .promo__text {
     padding-left: 175px;
     box-sizing: border-box;
+    margin-top: 59px;
+    margin-bottom: 31px;
   }
 
   .promo__info {
@@ -192,12 +200,14 @@
     box-sizing: border-box;
     margin-top: auto;
     margin-bottom: 0;
+    padding-right: 58px;
   }
 
   .promo__image {
     height: 637px;
     width: 50%;
     position: static;
+    margin-top: 47px;
   }
 
   .promo__descr-title {
