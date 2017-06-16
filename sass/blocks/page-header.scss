@@ -11,36 +11,30 @@
   @include hide-text;
 }
 
-
-
-@media screen and #{$mobile-widths-only} {
-  .page-header {
-
-  }
-}
 @media screen and #{$tablet-widths} {
 
   .page-header {
     @include centralize;
     padding: 0 $content-space-big;
+    width: $content-width-tablet;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
     height: 89px;
+    border-top: 0;
   }
-
 }
+
 @media screen and #{$desktop-widths}  {
   .page-header {
     position: relative;
     justify-content: space-around;
+    width: $content-width-desktop;
   }
 
   .page-header__logo {
     position: absolute;
-    z-index:3;
+    z-index: 3;
   }
 }

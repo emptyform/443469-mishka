@@ -170,7 +170,6 @@
   .main-nav__item--cart {
     order: 0;
     padding-right: 0;
-    width: 39%;
   }
 
   .main-nav__link {
@@ -189,13 +188,39 @@
     margin-left: 0;
   }
 
+  .main-nav__item-img--cart {
+    left: 32px;
+  }
+
+  .main-nav__link--catalog,
+  .main-nav__knitting {
+    padding-top: 18px;
+  }
+
   .main-nav__link--cart {
-    padding-left: 82px;
+    padding-left: 81px;
     display: flex;
+    font-size: 1.7em;
 
     span {
       align-self: center;
     }
+  }
+
+  .main-nav__item-img {
+    left: 32px;
+  }
+
+  .main-nav__sub-item--delivery {
+    display: block;
+    order: 1;
+    margin-left: auto;
+    padding-top: 17px;
+  }
+
+  .main-nav__sub-text {
+    color: $color-default;
+    font-size: 1.5em;
   }
 
   .main-nav__link--search {
@@ -288,13 +313,15 @@
     width: 25.4%;
   }
 
-  .main-nav__sub-text {
-    color: $color-default;
-  }
-
   .main-nav__sub-item--delivery {
     margin-left: auto;
     margin-right: 0;
+    font-size: 15px;
+    padding-top: 0;
+  }
+
+  .main-nav__sub-text {
+    font-size: 15px;
   }
 
 }

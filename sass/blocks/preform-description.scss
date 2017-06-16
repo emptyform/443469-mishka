@@ -7,3 +7,31 @@
   font-size: 1.3em;
   line-height: 1.84615;
 }
+
+@media screen and #{$tablet-widths} {
+
+  .preform-description__text {
+    font-size: 1.7em;
+  }
+
+  .preform-description {
+    padding: 0 $content-space-big;
+    width: $content-width-tablet;
+    margin-top: 64px;
+  }
+
+}
+
+
+@media screen and #{$desktop-widths}  {
+
+  .preform-description {
+    width: $content-width-desktop;
+    margin-top: 120px
+  }
+
+  .preform-description__text {
+    margin-right: 175px;
+    margin-left: 175px;
+  }
+}

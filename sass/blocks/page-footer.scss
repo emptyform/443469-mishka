@@ -30,6 +30,7 @@
   @include inblock;
   margin-right: 20px;
   font-weight: 700;
+  margin-top: -4px;
 }
 
 .page-footer__copyright-link {
@@ -61,6 +62,7 @@
 
   .page-footer {
     height: 144px;
+    margin-top: 57px;
   }
 
   .page-footer__inner {
@@ -68,6 +70,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: $content-width-tablet;
   }
 
   .social-links {
@@ -79,6 +82,20 @@
 
   .page-footer__logo {
     display: block;
-    margin-top: 22px;
+  }
+
+  .page-footer__copyright-text {
+    margin-top: 0;
+  }
+}
+
+@media screen and #{$desktop-widths} {
+
+  .page-footer {
+    margin-top: 104px;
+  }
+
+  .page-footer__inner {
+    width: $content-width-desktop;
   }
 }

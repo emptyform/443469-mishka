@@ -9,7 +9,7 @@
   color: $color-title;
   font-weight: 700;
   border: 1px solid $color-border;
-  padding: 23px 40px 24px 90px;
+  padding: 24px 40px 24px 90px;
   margin-bottom: 0;
   position: relative;
   margin-top: 0;
@@ -40,7 +40,7 @@
 .process__text {
   font-size: 1.3em;
   line-height: 1.84615;
-  margin: 0 0 30px;
+  margin: 0 3px 27px;
 }
 
 .process__button {
@@ -56,16 +56,18 @@
   width: 32px;
   height: 32px;
 }
+
 @media screen and #{$mobile-widths-only} {
   .process {
     position: relative;
-    padding-top: 95px;
+    padding-top: 96px;
+    margin-bottom: 60px;
   }
 
   .process__title {
     position: absolute;
-    top:0;
-    left:$content-space;
+    top: 0;
+    left: $content-space;
     right: $content-space;
   }
 }
@@ -73,18 +75,24 @@
 @media screen and #{$tablet-widths} {
   .process {
     padding: 0 $content-space-big;
+    width: $content-width-tablet;
     display: flex;
     flex-direction: column;
+    margin-bottom: 63px;
   }
 
   .process__title {
     font-size: 2em;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 35px 40px 31px 105px;
+    border-bottom: 0;
   }
 
   .process__text {
     font-size: 1.5em;
+    line-height: 29px;
+    margin: 0 0 36px;
   }
 
   .process__video {
@@ -96,18 +104,25 @@
     }
   }
 
-  .process__bottom {
+  .process__title-img {
+    left: 40px;
+  }
 
+  .process__bottom {
+    padding: 0 41px 45px;
   }
 
 }
+
 @media screen and #{$desktop-widths} {
+
   .process {
     flex-direction: row;
+    width: $content-width-desktop;
   }
 
   .process__video {
-flex-grow: 1;
+    flex-grow: 1;
   }
 
   .process__video-description {
@@ -118,20 +133,28 @@ flex-grow: 1;
 
   .process__title-img {
     position: static;
-    transform:translate(0);
+    transform: translate(0);
   }
 
   .process__title {
-    padding-right: 56px;
-    padding-left: 80px;
+    padding: 41px 56px 0 80px;
+  }
+
+  .process__text {
+    line-height: 29px;
+    margin-bottom: 49px;
   }
 
   .process__title-text {
     display: block;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 0;
   }
 
   .process__bottom {
     padding-right: 56px;
     padding-left: 80px;
+    padding-bottom: 23px;
   }
 }

@@ -1,6 +1,6 @@
 .about {
   @include centralize;
-  padding: 0 $content-space;
+  padding: 10px $content-space 0;
 }
 
 .about__title {
@@ -15,35 +15,137 @@
 }
 
 .about__item {
-  font-size: 1.7em;
-  line-height: 1.17647;
-  font-weight: 700;
   margin-bottom: 30px;
 }
 
 .about__item-img {
   fill: $color-main;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+
+  &--ecology {
+    padding-left: 8px;
+  }
+
+  &--price {
+    margin-bottom: 26px;
+  }
+
+  &--like {
+    margin-bottom: 20px;
+    margin-left: 7px;
+    padding-top: 5px;
+  }
+
+  &--love {
+    padding-left: 3px;
+    padding-top: 1px;
+    margin-bottom: 17px;
+  }
+
+  &--domestic {
+    margin-bottom: 31px;
+    padding-top: 3px;
+    margin-left: -6px;
+  }
+
+  &--gift {
+    margin-top: -3px;
+    padding-left: 3px;
+    margin-bottom: 20px;
+  }
 }
 
-@media screen and (min-width: 768px) {
+.about__item-text {
+  @include inblock;
+  font-size: 1.7em;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+@media screen and #{$tablet-widths} {
   .about {
     padding: 0 $content-space-big;
-
+    width: $content-width-tablet;
   }
-    .about__title {
+
+  .about__title {
     font-size: 4.3em;
+    margin-left: -4px;
+    margin-bottom: 33px;
   }
 
   .about__wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 435px;
+    height: 436px;
+    margin-bottom: 0;
+  }
+
+  .about__item-text {
+    font-size: 2em;
   }
 
   .about__item {
     width: 50%;
+    margin-bottom: 60px;
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
+    }
+  }
+  .about__item-img {
+    margin-bottom: 19px;
+
+    &--price {
+      margin-bottom: 28px;
+    }
+
+    &--like {
+      margin-bottom: 20px;
+    }
+
+    &--love {
+      margin-bottom: 21px;
+    }
+
+    &--domestic {
+      margin-bottom: 29px;
+    }
+
+    &--gift {
+      margin-bottom: 22px;
+      margin-top: 0;
+    }
+
+  }
+}
+
+@media screen and #{$desktop-widths} {
+  .about {
+    width: $content-width-desktop;
+  }
+
+  .about__title {
+    font-size: 5.3em;
+    padding-left: 175px;
+    margin-top: 40px;
+  }
+
+  .about__wrapper {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+
+  .about__item-img {
+
+    &--ecology {
+      margin-bottom: 15px;
+    }
+
+    &--love {
+      margin-bottom: 17px;
+    }
   }
 }

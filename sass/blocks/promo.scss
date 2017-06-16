@@ -7,6 +7,7 @@
 
 .promo__descr-title {
   font-size: 2.5em;
+  line-height: 34px;
   font-weight: 700;
   margin: 0;
 }
@@ -17,6 +18,7 @@
   color: #63d1bb;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 5px;
 
 }
 
@@ -24,13 +26,13 @@
   font-size: 1.5em;
   line-height: 1.6;
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .promo__info {
   font-size: 1.5em;
   line-height: 1.33333;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .promo__info-item {
@@ -63,7 +65,7 @@
   font-weight: 700;
   color: $color-default;
   text-align: center;
-  margin: 25px 0;
+  margin: 20px 0 22px;
 }
 
 .promo__order {
@@ -79,13 +81,29 @@
 @media screen and #{$tablet-widths} {
   .promo {
     padding: 0 $content-space-big;
+    width: $content-width-tablet;
     position: relative;
     flex-wrap: wrap;
-    height: 620px;
+    height: 600px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      display: block;
+      height: 16px;
+      width: 100%;
+      z-index: 100;
+      background-image: radial-gradient(circle at 10px 15px, #fff 12px, transparent 13px), radial-gradient(circle at 10px 0px, transparent 12px, #fff 13px);
+      background-repeat: repeat-x;
+      background-size: 40px 20px, 20px 20px;
+    }
   }
 
   .promo__descr {
-    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 29px;
   }
 
   .promo__descr-title {
@@ -94,7 +112,11 @@
 
   .promo__text {
     width: 50%;
+    margin-top: 54px;
+    line-height: 30px;
+    padding-right: 43px;
     box-sizing: border-box;
+    font-size: 1.7em;
   }
 
   .promo__descr-mark {
@@ -102,27 +124,45 @@
     align-self: center;
     max-width: 70px;
     text-align: center;
-
+    margin-right: 29px;
+    margin-top: 2px;
   }
+
   .promo__info {
     width: 50%;
     box-sizing: border-box;
+    margin-top: 19px;
+    padding-right: 43px;
   }
+
   .promo__order-block {
     width: 50%;
     box-sizing: border-box;
-
+    padding-right: 43px;
   }
+
+  .promo__order-price {
+    margin: 22px 0 28px;
+    font-size: 2em;
+  }
+
   .promo__image {
-    height: 400px;
-    width: 50%;
+    height: 403px;
+    width: 334px;
+    position: absolute;
+    right: 0;
+    top: 127px;
+    margin-right: 51px;
+    box-sizing: border-box;
   }
 }
 
 @media screen and #{$desktop-widths}{
 
   .promo {
-    height: 555px;
+    height: 683px;
+    width: $content-width-desktop;
+    padding-bottom: 95px;
   }
 
   .promo__descr-mark {
@@ -136,11 +176,18 @@
     position: relative;
     box-sizing: border-box;
     width: 50%;
+    margin-top: 111px;
+  }
+
+  .promo__descr-title {
+    font-size: 5.3em;
   }
 
   .promo__text {
     padding-left: 175px;
     box-sizing: border-box;
+    margin-top: 59px;
+    margin-bottom: 31px;
   }
 
   .promo__info {
@@ -153,11 +200,14 @@
     box-sizing: border-box;
     margin-top: auto;
     margin-bottom: 0;
+    padding-right: 58px;
   }
 
   .promo__image {
     height: 637px;
     width: 50%;
+    position: static;
+    margin-top: 47px;
   }
 
   .promo__descr-title {
