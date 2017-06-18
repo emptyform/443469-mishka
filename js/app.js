@@ -1,6 +1,5 @@
 var mainNav = document.querySelector('.main-nav');
 var navToggle = mainNav.querySelector('.main-nav__toggle');
-var menuList = mainNav.querySelector('.main-nav__list');
 
 mainNav.classList.remove('main-nav--nojs');
 mainNav.classList.remove('main-nav--open');
