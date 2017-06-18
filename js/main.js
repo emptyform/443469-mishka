@@ -3,16 +3,29 @@ var navToggle = mainNav.querySelector('.main-nav__toggle');
 var menuList = mainNav.querySelector('.main-nav__list');
 
 mainNav.classList.remove('main-nav--nojs');
+mainNav.classList.remove('main-nav--open');
 
 navToggle.addEventListener('click', function (event) {
   event.preventDefault();
 
   if (mainNav.classList.contains('main-nav--open')) {
     mainNav.classList.remove('main-nav--open');
-    console.log('fff');
 
   } else {
     mainNav.classList.add('main-nav--open');
-    console.log('2222fff')
+  }
+});
+
+var promoOrderBtn = document.querySelector('.promo__order, .catalog-item__cart');
+var popup = document.querySelector('.popup');
+
+promoOrderBtn.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  if (popup.classList.contains('hidden')) {
+    popup.classList.remove('hidden');
+
+  } else {
+    popup.classList.add('hidden');
   }
 });

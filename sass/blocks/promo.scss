@@ -55,9 +55,8 @@
 }
 
 .promo__image {
-  @include bg(50%, 50%, 'triple-set-mobile@1x.jpg', no-repeat);
-  background-size: cover;
   height: 316px;
+  text-align: center;
 }
 
 .promo__order-price {
@@ -91,12 +90,11 @@
       position: absolute;
       bottom: 0;
       display: block;
-      height: 16px;
-      width: 100%;
-      z-index: 100;
-      background-image: radial-gradient(circle at 10px 15px, #fff 12px, transparent 13px), radial-gradient(circle at 10px 0px, transparent 12px, #fff 13px);
-      background-repeat: repeat-x;
-      background-size: 40px 20px, 20px 20px;
+      height: 17px;
+      left:0;
+      right: 0;
+      background: url('../../img/bg-zigzag-line.svg')  0 0 repeat-x;
+      background-size: cover;
     }
   }
 
@@ -163,6 +161,12 @@
     height: 683px;
     width: $content-width-desktop;
     padding-bottom: 95px;
+
+    &:after {
+      height: 23px;
+      left:50px;
+      right:50px;
+    }
   }
 
   .promo__descr-mark {

@@ -1,23 +1,28 @@
 .top-promo {
   margin-bottom: 25px;
   background-color: #f9f9f9;
-
 }
 
 .top-promo__bg {
   padding: 71px $content-space 0;
   height: 211px;
-  background: url('../img/hero-mobile@1x.jpg') 50% 50% no-repeat #f9f9f9;
-  background-size: cover;
   @include centralize;
 
-  &--grey {
+  &--subpage {
     background: #f1f1f1;
     padding-top: 69px;
     height: 105px;
   }
 }
 
+.top-promo__bg--img {
+  background: url('../img/hero-mobile@1x.jpg') 50% 50% no-repeat #f9f9f9;
+  background-size: cover;
+
+  @media screen and #{$retina} {
+    background-image: url('../img/hero-mobile@2x.jpg')
+  }
+}
 
 .top-promo__title {
   color: #010000;
@@ -29,14 +34,18 @@
 }
 
 .top-promo__item {
-  background-color: $color-main;
   position: relative;
   padding: 28px 0 29px 30px;
   @include link-block;
+  transition-duration: .15s;
+}
 
-  &--dark {
-    background-color: #56c3b2;
-  }
+.top-promo__item--light {
+  background-color: $color-main;
+}
+
+.top-promo__item--dark {
+  background-color: $color-main-dark-bg;
 }
 
 .top-promo__item-text {
@@ -77,12 +86,53 @@
     }
   }
 
+  .top-promo__item {
+
+    &:hover {
+      padding-bottom: 33px;
+      position: relative;
+      transform: translateY(-5px);
+
+      .top-promo__item-img {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+
+      .top-promo__item-img {
+        opacity: 0.3;
+      }
+
+      .top-promo__item-text {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  .top-promo__item--light {
+
+    &:active {
+      background-color: #59d5bc;
+    }
+  }
+
+  .top-promo__item--dark {
+
+    &:active {
+      background-color: #46c1ae;
+    }
+  }
+
   .top-promo__bg {
-    height: 470px;
     width: $content-width-tablet;
     padding-left: $content-space-big;
     padding-right: $content-space-big;
-    padding-top: 155px;
+
+    &--img {
+      height: 470px;
+      padding-top: 155px;
+    }
 
     &--subpage {
       height: 135px;
@@ -130,9 +180,9 @@
     &:after {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: -5px;
       display: block;
-      height: 16px;
+      height: 21px;
       width: 100%;
       z-index: 100;
       background-image: radial-gradient(circle at 10px 15px, #fff 12px, transparent 13px), radial-gradient(circle at 10px 0px, transparent 12px, #fff 13px);
@@ -150,8 +200,16 @@
 
   .top-promo__bg {
     width: $content-width-desktop;
+  }
+
+  .top-promo__bg--img {
     padding-top: 152px;
     height: 474px;
+    background-image: url('../img/hero-desktop@1x.jpg');
+
+    @media screen and #{$retina} {
+      background-image: url('../img/hero-desktop@2x.jpg');
+    }
   }
 
   .top-promo__bg--subpage {
