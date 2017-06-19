@@ -18,13 +18,17 @@ navToggle.addEventListener('click', function (event) {
 var promoOrderBtn = document.querySelector('.promo__order, .catalog-item__cart');
 var popup = document.querySelector('.popup');
 
-promoOrderBtn.addEventListener('click', function (event) {
-  event.preventDefault();
+if(promoOrderBtn) {
+  promoOrderBtn.addEventListener('click', function (event) {
+    event.preventDefault();
 
-  if (popup.classList.contains('hidden')) {
-    popup.classList.remove('hidden');
+    if (popup.classList.contains('hidden')) {
+      popup.classList.remove('hidden');
 
-  } else {
-    popup.classList.add('hidden');
-  }
-});
+    } else {
+      popup.classList.add('hidden');
+    }
+  });
+}
+
+

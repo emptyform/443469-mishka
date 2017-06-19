@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    var myMap,
+      myPlacemark;
+
+    function init() {
+      myMap = new ymaps.Map("map", {
+        center: [59.938954, 30.323125],
+        zoom: 14
+      });
+
+      myPlacemark = new ymaps.Placemark([59.938954, 30.323125], {
+        hintContent: 'Мишка!',
+        balloonContent: 'г. Санкт-Петербург,<br />' +
+        ' ул. Большая Конюшенная,<br />' +
+        'д.19/8, офис 101'
+      });
+
+      myMap.geoObjects.add(myPlacemark);
+    }
+  </script>
 </head>
 <body>
 <header class="page-header">
@@ -240,13 +262,7 @@
       </div>
     </div>
     </div>
-    <div class="contacts__map">
-      <picture>
-        <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-        <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"  alt="Карта">
-      </picture>
-    </div>
+    <div class="contacts__map" id="map"></div>
 
     <div class="contacts__write-wrap">
       <button class="contacts__write btn" type="button">Напишите нам</button>
