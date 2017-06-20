@@ -55,12 +55,21 @@
   }
 }
 
+.ymaps-2-1-50-map {
+  z-index: 1!important;//for Yandex map
+}
+
 .contacts__map {
-  @include bg(50%, 50%, 'map-mobile@1x.jpg');
   position: relative;
   height: 457px;
   width: 100%;
   @include clearfix;
+  text-align: center;
+  background: url('../img/map-mobile@1x.jpg') 0 0 no-repeat;
+
+  @media screen and #{$retina} {
+    background-image: url('../img/map-mobile@2x.jpg');
+  }
 
   &::after {
     content: '';
@@ -71,6 +80,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 0;
   }
 }
 
@@ -87,6 +97,7 @@
   .contacts {
     margin-top: 75px;
   }
+
   .contacts__wrap {
     padding: 0 $content-space-big;
     width: $content-width-tablet;
@@ -100,10 +111,17 @@
     padding: 0;
     margin-top: 10px;
     margin-bottom: 35px;
-  }
+    position: relative;
 
-  .contacts__map {
-    background-size: cover;
+    &::before {
+      content: '';
+      position: absolute;
+      @include bg(0, 0, 'icon-flag.svg');
+      width: 47px;
+      height: 81px;
+      top: 0;
+      right: 3px;
+    }
   }
 
   .contacts__info {
@@ -123,6 +141,17 @@
     max-width: none;
   }
 
+  .contacts__item-val-text {
+
+    &:hover {
+      color: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   .contacts__write-wrap {
     padding: 0 $content-space-big;
     width: $content-width-tablet;
@@ -132,6 +161,14 @@
 
   .contacts__write {
     width: 230px;
+  }
+
+  .contacts__map {
+    background-image: url('../img/map-tablet@1x.jpg');
+
+    @media screen and #{$retina} {
+      background-image: url('../img/map-tablet@2x.jpg');
+    }
   }
 }
 
@@ -151,6 +188,11 @@
     margin-top: 54px;
     margin-left: -5px;
     margin-bottom: 31px;
+
+    &::before {
+      top: 0;
+      left: -107px;
+    }
   }
 
   .contacts__wrap {
@@ -176,5 +218,13 @@
     bottom: 0;
     width: auto;
     left: 124px;
+  }
+
+  .contacts__map {
+    background-image: url('../img/map-desktop@1x.jpg');
+
+    @media screen and #{$retina} {
+      background-image: url('../img/map-desktop@2x.jpg');
+    }
   }
 }
