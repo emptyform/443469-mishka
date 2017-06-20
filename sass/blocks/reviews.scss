@@ -83,10 +83,10 @@
     padding: 77px $content-space-big 50px;
     width: $content-width-tablet;
     position: relative;
-    background: url('../../img/review@1x.jpg') 0 100% no-repeat;
+    background: url('../img/review@1x.jpg') 0 100% no-repeat;
 
     @media screen and #{$retina} {
-      background-image: url('../../img/review@2x.jpg');
+      background-image: url('../img/review@2x.jpg');
       background-size: 350px 457px;
     }
 
@@ -98,7 +98,7 @@
       height: 17px;
       left:0;
       right: 0;
-      background: url('../../img/bg-zigzag-line.svg')  0 0 repeat-x;
+      background: url('../img/bg-zigzag-line.svg')  0 0 repeat-x;
       background-size: cover;
     }
   }

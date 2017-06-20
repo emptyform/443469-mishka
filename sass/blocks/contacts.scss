@@ -65,10 +65,10 @@
   width: 100%;
   @include clearfix;
   text-align: center;
-  background: url('../../img/map-mobile@1x.jpg') 0 0 no-repeat;
+  background: url('../img/map-mobile@1x.jpg') 0 0 no-repeat;
 
   @media screen and #{$retina} {
-    background-image: url('../../img/map-mobile@2x.jpg');
+    background-image: url('../img/map-mobile@2x.jpg');
   }
 
   &::after {
@@ -164,10 +164,10 @@
   }
 
   .contacts__map {
-    background-image: url('../../img/map-tablet@1x.jpg');
+    background-image: url('../img/map-tablet@1x.jpg');
 
     @media screen and #{$retina} {
-      background-image: url('../../img/map-tablet@2x.jpg');
+      background-image: url('../img/map-tablet@2x.jpg');
     }
   }
 }
@@ -221,10 +221,10 @@
   }
 
   .contacts__map {
-    background-image: url('../../img/map-desktop@1x.jpg');
+    background-image: url('../img/map-desktop@1x.jpg');
 
     @media screen and #{$retina} {
-      background-image: url('../../img/map-desktop@2x.jpg');
+      background-image: url('../img/map-desktop@2x.jpg');
     }
   }
 }
