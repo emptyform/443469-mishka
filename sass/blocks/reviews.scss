@@ -2,6 +2,19 @@
   @include centralize;
   padding: 0 $content-space 40px;
   margin-top: 55px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    display: block;
+    height: 7px;
+    left:0;
+    right: 0;
+    background: url('../img/bg-zigzag-line.svg')  0 0 repeat-x;
+    background-size: cover;
+  }
 }
 
 .reviews__title {
@@ -82,7 +95,6 @@
   .reviews {
     padding: 77px $content-space-big 50px;
     width: $content-width-tablet;
-    position: relative;
     background: url('../img/review@1x.jpg') 0 100% no-repeat;
 
     @media screen and #{$retina} {
@@ -91,15 +103,8 @@
     }
 
     &::after {
-      content: '';
-      position: absolute;
       bottom: -76px;
-      display: block;
       height: 17px;
-      left:0;
-      right: 0;
-      background: url('../img/bg-zigzag-line.svg')  0 0 repeat-x;
-      background-size: cover;
     }
   }
 

@@ -22,7 +22,8 @@
   font-size: 1.9em;
   color: $color-title;
   text-align: center;
-  line-height: 80px;
+  line-height: 72px;
+  height: 80px;
   position: relative;
   text-decoration: none;
   @include inblock;
@@ -83,7 +84,7 @@
   .page-footer__logo {
     display: block;
 
-    &:hover {
+     &:hover {
 
       svg {
         fill: $color-main-img-hover;
@@ -119,6 +120,7 @@
 
   .page-footer__copyright {
     width: auto;
+    line-height: 80px;
 
     &:hover {
 
@@ -132,12 +134,21 @@
     }
   }
 
+  .page-footer--form {
+    margin-top: 40px;
+  }
+
+
 }
 
 @media screen and #{$desktop-widths} {
 
   .page-footer {
     margin-top: 104px;
+  }
+
+  .page-footer--form {
+    margin-top: 44px;
   }
 
   .page-footer__inner {
