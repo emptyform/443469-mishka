@@ -22,7 +22,8 @@
   font-size: 1.9em;
   color: $color-title;
   text-align: center;
-  line-height: 80px;
+  line-height: 72px;
+  height: 80px;
   position: relative;
   text-decoration: none;
   @include inblock;
@@ -76,8 +77,8 @@
     border-bottom: 0;
     position: absolute;
     left: 50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .page-footer__logo {
@@ -119,6 +120,7 @@
 
   .page-footer__copyright {
     width: auto;
+    line-height: 80px;
 
     &:hover {
 
@@ -132,12 +134,20 @@
     }
   }
 
+  .page-footer--form {
+    margin-top: 40px;
+  }
+
 }
 
 @media screen and #{$desktop-widths} {
 
   .page-footer {
     margin-top: 104px;
+  }
+
+  .page-footer--form {
+    margin-top: 44px;
   }
 
   .page-footer__inner {

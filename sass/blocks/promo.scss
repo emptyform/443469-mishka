@@ -3,6 +3,20 @@
   padding: 0 $content-space;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    display: block;
+    height: 7px;
+    left: 0;
+    right: 0;
+    background: url('../img/bg-zigzag-line.svg') 0 0 repeat-x;
+    background-size: cover;
+  }
+
 }
 
 .promo__descr-title {
@@ -86,15 +100,11 @@
     height: 600px;
 
     &:after {
-      content: '';
-      position: absolute;
       bottom: 0;
       display: block;
       height: 17px;
-      left:0;
+      left: 0;
       right: 0;
-      background: url('../img/bg-zigzag-line.svg')  0 0 repeat-x;
-      background-size: cover;
     }
   }
 
@@ -106,6 +116,7 @@
 
   .promo__descr-title {
     font-size: 4.3em;
+    margin-left: -4px;
   }
 
   .promo__text {
@@ -164,8 +175,8 @@
 
     &:after {
       height: 23px;
-      left:50px;
-      right:50px;
+      left: 50px;
+      right: 50px;
     }
   }
 

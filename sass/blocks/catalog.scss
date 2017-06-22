@@ -84,7 +84,11 @@
   .catalog {
     padding: 0 $content-space-big;
     width: $content-width-tablet;
-    margin-top: 67px;
+    margin-top: 73px;
+
+    &:last-child {
+      margin-bottom: 45px;
+    }
   }
 
   .catalog-item__link {
@@ -93,7 +97,7 @@
 
   .catalog-item {
     display: flex;
-    min-height: 334px;
+    height: 334px;
     margin-bottom: 54px;
 
     &:hover {
