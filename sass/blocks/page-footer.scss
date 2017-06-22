@@ -77,14 +77,14 @@
     border-bottom: 0;
     position: absolute;
     left: 50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .page-footer__logo {
     display: block;
 
-     &:hover {
+    &:hover {
 
       svg {
         fill: $color-main-img-hover;
@@ -137,7 +137,6 @@
   .page-footer--form {
     margin-top: 40px;
   }
-
 
 }
 
