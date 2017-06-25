@@ -9,7 +9,7 @@ body {
 
 body {
   color: $color-default;
-  font: 400 62.5%/1.84615 $global-font, Arial, Helvetica, sans-serif;
+  font: 400 62.5%/1.84615 $global-font;
 }
 
 .btn {
@@ -28,7 +28,7 @@ body {
   border: 2px solid $color-default;
   color: $color-default;
   background-color: #fff;
-  @include box-sizing;
+  box-sizing: border-box;
   font-weight: 700;
   text-transform: uppercase;
 

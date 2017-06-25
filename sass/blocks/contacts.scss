@@ -55,23 +55,18 @@
   }
 }
 
-.ymaps-2-1-50-map {
-  z-index: 1!important;//for Yandex map
-}
-
 .contacts__map {
   position: relative;
   height: 457px;
   width: 100%;
-  @include clearfix;
   text-align: center;
-  background: url('../img/map-mobile@1x.jpg') 0 0 no-repeat;
+  background: url('../img/map-mobile@1x.jpg') 0 0 no-repeat #eae6dd;
 
   @media screen and #{$retina} {
     background-image: url('../img/map-mobile@2x.jpg');
   }
 
-  &::after {
+  &::before {
     content: '';
     position: absolute;
     @include bg(0, 0, 'icon-map-pin.svg');
@@ -80,7 +75,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0;
   }
 }
 
@@ -138,7 +132,7 @@
   }
 
   .contacts__item-val {
-    max-width: none;
+    max-width: 240px;
   }
 
   .contacts__item-val-text {
@@ -203,6 +197,10 @@
 
   .contacts__info-item {
     width: 100%;
+  }
+
+  .contacts__item-val {
+    max-width: 223px;
   }
 
   .contacts__info {
