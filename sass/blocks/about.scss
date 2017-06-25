@@ -61,6 +61,30 @@
   font-size: 1.7em;
   line-height: 20px;
   font-weight: 700;
+
+  &--ecology {
+    width: 185px;
+  }
+
+  &--price {
+    width: 215px;
+  }
+
+  &--like {
+    width: 185px;
+  }
+
+  &--love {
+    width: 215px;
+  }
+
+  &--domestic {
+    width: 265px;
+  }
+
+  &--gift {
+    width: 215px;
+  }
 }
 
 @media screen and #{$tablet-widths} {
@@ -85,6 +109,15 @@
 
   .about__item-text {
     font-size: 2em;
+
+    &--ecology,
+    &--price,
+    &--like,
+    &--love,
+    &--domestic,
+    &--gift {
+      width: 300px;
+    }
   }
 
   .about__item {

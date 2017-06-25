@@ -5,12 +5,6 @@
   *zoom: 1;
 }
 
-@mixin box-sizing() {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 @mixin clearfix() {
   *zoom: 1;
 
@@ -19,10 +13,10 @@
     content: '';
     display: table;
   }
+
   &:after {
     clear: both;
   }
-
 }
 
 @mixin centralize() {
@@ -50,7 +44,7 @@
   text-decoration: none;
   display: block;
 
-  &:hover{
+  &:hover {
     text-decoration: none;
   }
 }

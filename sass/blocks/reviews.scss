@@ -10,9 +10,9 @@
     bottom: -8px;
     display: block;
     height: 7px;
-    left:0;
+    left: 0;
     right: 0;
-    background: url('../img/bg-zigzag-line.svg')  0 0 repeat-x;
+    background: url('../img/bg-zigzag-line.svg') 0 0 repeat-x;
     background-size: cover;
   }
 }
@@ -63,7 +63,7 @@
 .reviews__button {
   background: none;
   width: 50%;
-  @include box-sizing;
+  box-sizing: border-box;
   padding: 12px 11px 10px;
   border: 1px solid $color-border;
   text-align: center;
@@ -173,9 +173,9 @@
 
     &:after {
       height: 23px;
-      left:50px;
+      left: 50px;
       right: 50px;
-      bottom:-87px;
+      bottom: -87px;
     }
   }
 
